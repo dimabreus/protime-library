@@ -1,7 +1,7 @@
 from protime import setInterval, clearInterval, setTimeout
 
 def say_hello(name):
-    print(f"Привет, ${name}!")
+    print(f"Привет, {name}!")
 
-interval = setInterval(say_hello, 1000, "Дима") # Будет вызывать функцию say_hello каждые 1000 миллисекунд с параметрами "Дима".
-setTimeout(clearInterval, 5000, interval)
+interval = setInterval(say_hello, 1, "Дима") # Будет вызывать функцию say_hello каждую 1 секунду с параметрами "Дима".
+setTimeout(clearInterval, 5, interval)
